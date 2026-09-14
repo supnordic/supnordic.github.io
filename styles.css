@@ -1,10 +1,10 @@
 
 :root {
-  --ink:#121417; --muted:#5c6570; --paper:#fdf4ff;
-  --accent:#a21caf; --deep:#701a75; --line:rgba(18,20,23,.10);
+  --ink:#121417; --muted:#5c6570; --paper:#f6f1ea;
+  --accent:#8a6a4f; --deep:#1c1410; --line:rgba(18,20,23,.10);
   --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
   --body:"Source Sans 3","Segoe UI",sans-serif; --shell:1120px;
-  --radius:12px;
+  --radius:4px;
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;padding-bottom:72px;-webkit-font-smoothing:antialiased}
@@ -29,7 +29,7 @@ nav a.on,nav a:hover{color:var(--accent)}
 .cta,.btn.solid{background:var(--accent);color:#fff}
 .btn.line{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}
 .btn.quiet{border:1px solid var(--line);background:#fff;color:var(--ink)}
-.hero{position:relative;min-height:calc(100vh - 70px);display:grid;align-items:end;color:#fff;overflow:hidden}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end;color:#fff;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:zoom 26s ease-in-out infinite alternate}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(115deg,rgba(10,12,16,.82),rgba(10,12,16,.28))}
 .hero-copy{position:relative;z-index:2;padding:5rem 0 3.8rem;max-width:720px}
@@ -153,4 +153,8 @@ blockquote footer{margin-top:.85rem;color:var(--muted);font-size:.9rem}
   .mobile-cta{display:grid}
   .promo{flex-direction:column;align-items:flex-start}
 }
+
+.brand,.hero h1,.page-hero h1,h2{letter-spacing:-.02em}
+.item,.card,.person,blockquote{border-radius:4px}
+.cta,.btn{border-radius:4px;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}
 
